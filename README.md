@@ -1,31 +1,30 @@
-# Real-Time-Network-Traffic-Analysis-Using-Wireshark
-To understand and detect common network vulnerabilities through deep packet inspection and apply security recommendations for mitigation.
-This project demonstrates real-time network traffic analysis using **Wireshark**. It’s a hands-on cybersecurity project designed to simulate the role of a **SOC Analyst** investigating suspicious traffic patterns.
+# 📡 Real-Time Network Traffic Analysis Using Wireshark
+
+## 🎯 Objective
+
+To analyze real-time network traffic using **Wireshark** to identify potential security threats such as suspicious DNS queries, TCP retransmissions, handshake anomalies, and connection resets. The project simulates the tasks of a **SOC Analyst**, enhancing packet inspection skills and applying core cybersecurity concepts to practical scenarios.
 
 ---
 
-##  Objective
+## 🛠️ Tools Used
 
-To gain practical experience in packet analysis and identify real-world threats such as:
-- Unencrypted credentials over HTTP
-- Abnormal DNS behavior
-- SSH brute-force attempts
-- Potential data exfiltration
-
----
-
-##  Tools Used
-
-- **Wireshark** for traffic capture and filtering
-- **Npcap** for packet sniffing
-- OS: Windows 11 / Kali Linux (VM)
+- **Wireshark** – Packet capture and protocol analysis
+- **VirtualBox/VMware** – For isolated lab environment
+- **Kali Linux & Windows** – Traffic generation and observation
+- **.pcapng files** – For offline packet analysis
 
 ---
 
-##  Key Wireshark Filters Used
+## 📂 Project Structure
 
 ```bash
-http contains "password"
-dns
-tcp.port == 22
-ip.dst == [external_IP]
+Real-Time-Network-Traffic-Analysis-Using-Wireshark/
+├── README.md
+├── Wireshark_Packet_Analysis_Report.pdf
+├── sample_traffic.pcapng
+├── screenshots/
+│   ├── dns-analysis.png
+│   ├── tcp-retransmission.png
+│   ├── tcp-stream-analysis.png
+│   ├── tcp-empty-payloads.png
+│   ├── tcp-reset.png
